@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Projectiles_Empire_Space>
+
+ <HardPoint Name="HP_TIE_Super_Fighter_Lasers">
+    <Type>HARD_POINT_WEAPON_MASS_DRIVER</Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+    <Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+    <Fire_Cone_Width>45.0</Fire_Cone_Width>
+    <Fire_Cone_Height>45.0</Fire_Cone_Height>
+    <Fire_SFXEvent>Unit_TIE_Fighter_Fire</Fire_SFXEvent>
+    <Fire_Projectile_Type>Proj_Space_Laser_Dual_Green</Fire_Projectile_Type>
+    <Fire_Min_Recharge_Seconds>0.66</Fire_Min_Recharge_Seconds>
+    <Fire_Max_Recharge_Seconds>0.91</Fire_Max_Recharge_Seconds>
+    <Fire_Pulse_Count>1</Fire_Pulse_Count>
+    <Fire_Pulse_Delay_Seconds>0.33</Fire_Pulse_Delay_Seconds>
+    <Fire_Range_Distance>500.0</Fire_Range_Distance>
+    <Fire_Inaccuracy_Distance> Fighter, 1.5 </Fire_Inaccuracy_Distance> <!--2.5-->
+    <Fire_Inaccuracy_Distance> Bomber, 1.5 </Fire_Inaccuracy_Distance>  <!--2.5-->
+    <Fire_Inaccuracy_Distance> Transport, 3.0 </Fire_Inaccuracy_Distance>
+    <Fire_Inaccuracy_Distance>Corvette,20.0</Fire_Inaccuracy_Distance>
+    <Fire_Inaccuracy_Distance>Frigate,25.0</Fire_Inaccuracy_Distance>
+    <Fire_Inaccuracy_Distance>Cruiser,25.0</Fire_Inaccuracy_Distance>
+    <Fire_Inaccuracy_Distance>Capital,25.0</Fire_Inaccuracy_Distance>
+    <Fire_Inaccuracy_Distance>SpaceStructure,25.0</Fire_Inaccuracy_Distance>
+    <Fire_Inaccuracy_Distance> Gunship, 3.0 </Fire_Inaccuracy_Distance>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+  </HardPoint>
+
+
+
+ </Projectiles_Empire_Space>

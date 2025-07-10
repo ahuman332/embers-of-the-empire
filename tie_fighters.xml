@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<TieUnits>
+<SpaceUnit Name="E_TIE_Super_Fighter">
+        <Variant_Of_Existing_Type>SpaceUnit_Starfighter_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_TIE_FIGHTER</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_FIGHTER
+            AOTR_SPACE_ROLE_SWARM_FIGHTER
+            AOTR_MANUFACTURER_SIENAR
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_TIE_FIGHTER
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_UNSHIELDED
+            AOTR_SPACE_HULL_FIGHTER_15
+            AOTR_SPACE_MOVEMENT_HIGH_TURN_450
+            AOTR_SPACE_SENSOR_1500
+            AOTR_SPACE_RANGE_500_500
+            AOTR_SPACE_WEAPONS_TIE_FIGHTER
+        </Encyclopedia_Text>
+        <Icon_Name>i_button_tie_fighter.tga</Icon_Name>
+        <Space_Model_Name>ev_TieFighter.ALO</Space_Model_Name>
+
+        <Max_Speed>5.5</Max_Speed> <!--4.5-->
+        <Min_Speed>3.5</Min_Speed><!--3.0-->
+        <Max_Rate_Of_Turn>1.57</Max_Rate_Of_Turn>
+        <Max_Lift>1.57</Max_Lift>
+        <Max_Thrust>1.0</Max_Thrust>
+        <Max_Rate_Of_Roll>1.57</Max_Rate_Of_Roll>
+        <Bank_Turn_Angle>90</Bank_Turn_Angle>
+
+        <Hyperspace>no</Hyperspace>
+        <Hyperspace_Speed>0</Hyperspace_Speed>
+
+        <Affiliation>Empire</Affiliation>
+
+        <AI_Combat_Power>7.5</AI_Combat_Power>
+        <Autoresolve_Health>15</Autoresolve_Health>
+
+        <Shield_Points>0</Shield_Points>
+        <Tactical_Health>15</Tactical_Health>
+        <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+        <Armor_Type>Armor_Space_Fighter</Armor_Type>
+        <Shield_Armor_Type>Shield_Space_AntiLaser_Fighter</Shield_Armor_Type>
+
+        <Hardpoints>
+            HP_TIE_Super_Fighter_Lasers
+        </Hardpoints>
+
+        <Death_Explosions>Fighter_Explosion_Space_Empire</Death_Explosions>
+        <Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+        <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+        <SFXEvent_Fire>Unit_TIE_Fighter_Fire</SFXEvent_Fire>
+        <SFXEvent_Select>Unit_Select_TIE_Fighter</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_TIE_Fighter</SFXEvent_Move>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_TIE_Fighter</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_TIE_Fighter</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Guard_TIE_Fighter</SFXEvent_Guard>
+        <SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_TIE_Fighter</SFXEvent_Move_Into_Asteroid_Field>
+        <SFXEvent_Move_Into_Nebula>Unit_Nebula_TIE_Fighter</SFXEvent_Move_Into_Nebula>
+
+        <SFXEvent_Health_Low_Warning>Unit_Health_Low_TIE_Fighter</SFXEvent_Health_Low_Warning>
+        <SFXEvent_Health_Critical_Warning>Unit_Health_Critical_TIE_Fighter</SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Tie_Fighter</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+        <SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Tie_Fighter</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_LASER, Unit_HP_LASER_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_ENGINE, Unit_HP_ENGINES_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+        <SFXEvent_Attack_Hardpoint>HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_TIE_Fighter</SFXEvent_Attack_Hardpoint>
+
+        <!-- Test: Each TIE fighter will play a 3D ambient "flyby" sound every X to Y seconds -->
+        <!-- Note: To invoke SFXEvent_Ambient, AMBIENT_SFX behavior needs to be added to the behavior list -->
+        <SFXEvent_Ambient_Moving>TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+        <SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+        <SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+        <SFXEvent_Engine_Cinematic_Focus_Loop>TIE_Fighter_Eng_Idle_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+        <CategoryMask>Fighter</CategoryMask>
+        <Targeting_Priority_Set>Space_Fighter</Targeting_Priority_Set>
+
+        <Spin_Away_On_Death_Explosion>Fighter_Explosion_Space_Empire</Spin_Away_On_Death_Explosion>
+        <Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+    </SpaceUnit>
+
+</TieUnits>

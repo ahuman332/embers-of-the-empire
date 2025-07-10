@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<Squadrons>
+ <!--empire-->
+        <Squadron Name="E_TIE_Super_Fighter_S">
+        <Text_ID>TEXT_TIE_FIGHTER_2_SQUADRON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_FIGHTER
+            AOTR_SPACE_ROLE_SWARM_FIGHTER
+            AOTR_MANUFACTURER_SIENAR
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_TIE_FIGHTER
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_UNSHIELDED
+            AOTR_SPACE_HULL_FIGHTER_15
+            AOTR_SPACE_MOVEMENT_HIGH_TURN_450
+            AOTR_SPACE_SENSOR_1500
+            AOTR_SPACE_RANGE_500_500
+            AOTR_SPACE_WEAPONS_TIE_FIGHTER
+            AOTR_SPACE_SQUADRON_SIZE_12
+        </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against/>
+        <Encyclopedia_Vulnerable_To/>
+        <GUI_Row>0</GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Formation_Priority>1</Formation_Priority>
+        <Is_Escort>Yes</Is_Escort>
+        <Is_Bomber>no</Is_Bomber>
+        <Autoresolve_Health>120</Autoresolve_Health>
+        <Damage>60</Damage>
+        <AI_Combat_Power>125</AI_Combat_Power>
+        <Affiliation>Empire</Affiliation>
+        <Political_Control>0</Political_Control>
+        <Build_Cost_Credits>250</Build_Cost_Credits>
+        <Piracy_Value_Credits>25</Piracy_Value_Credits>
+        <Build_Time_Seconds>8</Build_Time_Seconds>
+        <Tactical_Bribe_Cost>52</Tactical_Bribe_Cost>
+        <Score_Cost_Credits>52</Score_Cost_Credits>
+        <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+        <Tech_Level>3</Tech_Level>
+        <Required_Timeline/>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Required_Special_Structures/>
+        <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN</SpaceBehavior>
+        <Squadron_Units>E_TIE_Super_Fighter, E_TIE_Super_Fighter</Squadron_Units>
+        <Squadron_Units>E_TIE_FE_TIE_Super_Fighterighter, E_TIE_Super_Fighter</Squadron_Units>
+        <Squadron_Units>E_TIE_Super_Fighter, E_TIE_Super_Fighter</Squadron_Units>
+        <Squadron_Units>E_TIE_Super_Fighter, E_TIE_Super_Fighter</Squadron_Units>
+        <Squadron_Units>E_TIE_Super_Fighter, E_TIE_Super_Fighter</Squadron_Units>
+        <Squadron_Units>E_TIE_Super_Fighter, E_TIE_Super_Fighter</Squadron_Units>
+        <Max_Squad_Size>12</Max_Squad_Size>
+        <!-- TRIPLE LINE FORMATION -->
+        <Squadron_Offsets>60.0,-90.0,0.0</Squadron_Offsets>
+        <Squadron_Offsets>60.0,-30.0,0.0</Squadron_Offsets>
+        <Squadron_Offsets>60.0,30.0,0.0</Squadron_Offsets>
+        <Squadron_Offsets>60.0,90.0,0.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,-90.0,60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,-30.0,60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,30.0,60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,90.0,60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,-90.0,-60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,-30.0,-60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,30.0,-60.0</Squadron_Offsets>
+        <Squadron_Offsets>0.0,90.0,-60.0</Squadron_Offsets>
+        <Icon_Name>i_button_tie_fighter.tga</Icon_Name>
+        <GUI_Model_Name>EV_TieFighter.ALO</GUI_Model_Name>
+        <GUI_Distance>120</GUI_Distance>
+        <GUI_Offset>0 0 0</GUI_Offset>
+        <GUI_Velocity>45</GUI_Velocity>
+        <SFXEvent_Build_Started>EHD_Build_Unit</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+        <FormationOrder>1</FormationOrder>
+        <Squadron_Formation_Error_Tolerance>50.0</Squadron_Formation_Error_Tolerance>
+        <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Guard_Chase_Range>200.0</Guard_Chase_Range>
+        <Idle_Chase_Range>1500.0</Idle_Chase_Range>
+        <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+        <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+        <Property_Flags>SmallShip</Property_Flags>
+        <Movie_Object>false</Movie_Object>
+        <!-- Non-Hero unit abilities description -->
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <!-- Primary ability -->
+            <Unit_Ability>
+                <Type>HUNT</Type>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+        <Tactical_Build_Cost_Multiplayer>100</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites/>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+        <!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+        <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+        <Population_Value>1</Population_Value>
+        <Space_Override_Population_Value>4</Space_Override_Population_Value>
+    </Squadron>
+</Squadrons>
